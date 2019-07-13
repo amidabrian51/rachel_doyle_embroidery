@@ -169,3 +169,21 @@ h3 {
     line-height: 1.5;
     margin: 40px 0 25px;
 }
+#footer {
+    height: 200px;
+    background-color: #fff;
+  
+    margin-top: 200px;
+    /* justify-items: center; */
+  }
+  .soc-icons {
+    /* margin: 50px 3% 5% 0; */
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 30px;
+  
+  }
+  .icons {
+    padding-right: 40px;
+  }
