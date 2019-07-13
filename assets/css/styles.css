@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font: normal 16px sans-serif;
+    color: #555;
+}
+
+ul, nav {
+    list-style: none;
+  
+}
+a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: green;
+}
+a:hover {
+    opacity: 1;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+/* Header Section */
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+header h2 {
+    
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: bold;
+    
+}
+
+header nav {
+    display: flex;
+    margin-right: -15px;
+   
+}
+header nav li {
+    margin: 0 30px;
+   
+    
+}
+/* thimble styling */
+
+.thimble {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.thimble .background-image {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-color: #80a3db
+}
+.thimble h1 {
+    font: normal 50px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+}
+/* .thimble h3 {
+    font: normal 28px "Open Sans", sans-serif;
+    margin-bottom: 40px;
+} */
+.thimble-content-area {
+    opacity: 0;
+    margin-top: 150px;
+    animation: 1s slidefade 2s  forwards ;
+}
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0px
+    }
+}
+
+/* images section */
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: #3f51b5;
+    border: 0;
+    margin-top: 50px;
+}
+
+section p {
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+section h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+}
+.grid li {
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.grid li.small {
+    flex-basis: 30%;
+}
+.grid li.large {
+    flex-basis: 70%;
+}
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left
+
+}
+.author-image {
+    width: 20%;
+    margin: 30px;
+    border-radius: 100%;
+}
+/* .speaker-info h2 {
+    text-align: left;
+} */
+
+/* Testimonial Section */
+h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 500;
+}
+.testimonials .quote {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 40px 0 25px;
+}
