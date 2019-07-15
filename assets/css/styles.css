@@ -38,6 +38,7 @@ section {
 /* Header Section */
 
 header {
+    z-index: 1;
     position: absolute;
     width: 100%;
     display: flex;
