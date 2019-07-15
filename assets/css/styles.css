@@ -28,6 +28,13 @@ section {
     align-items: center;
     padding: 100px 80px;
 }
+
+@media (max-width: 800px) {
+    section {
+        padding: 50px 20px;
+    }
+
+}
 /* Header Section */
 
 header {
@@ -61,6 +68,16 @@ header nav li {
     margin: 0 30px;
    
     
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
 }
 /* thimble styling */
 
@@ -99,6 +116,17 @@ header nav li {
     100% {
         opacity: 1;
         margin: 0px
+    }
+}
+@media (max-width: 800px) {
+    .thimble {
+        min-height: 600px;
+    }
+    .thimble h1 {
+        font-size: 48px;
+    }
+    .thimble h3 {
+        font-size: 24px;
     }
 }
 
@@ -153,6 +181,19 @@ section h2 {
     width: 20%;
     margin: 30px;
     border-radius: 100%;
+}
+
+@media (max-width: 1100px) {
+    .grid li.small,
+    .grid li.large {
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 800px) {
+    .grid li.small,
+    .grid li.large {
+        flex-basis: 100%;
+    }
 }
 /* .speaker-info h2 {
     text-align: left;
